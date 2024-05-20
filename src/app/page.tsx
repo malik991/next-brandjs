@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-[20px] lg:container lg:px-2 lg:mx-auto">
+      <div className="px-[20px] lg:container lg:px-2 lg:mx-auto" id="footer">
         <Footer />
       </div>
     </>

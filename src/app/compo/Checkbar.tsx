@@ -9,7 +9,7 @@ export function CheckBar() {
     { name: "Features", redirectTo: "#features" },
     { name: "EnterPrise", redirectTo: "/" },
     { name: "Pricing", redirectTo: "#pricing" },
-    { name: "Careers", redirectTo: "/" },
+    { name: "Careers", redirectTo: "#footer" },
   ];
   return (
     <nav className="flex w-full justify-between items-center px-5 py-4 lg:container lg:mx-auto">
