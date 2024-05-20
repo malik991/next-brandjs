@@ -9,6 +9,7 @@ import Pricing from "./compo/Pricing";
 import gardient2 from "../../public/Gradient-2.png";
 import rightArr from "../../public/Arrow1.png";
 import Image from "next/image";
+import Footer from "./compo/Footer";
 export default function Home() {
   const listText1: { value: string }[] = [
     { value: "Lorem ipsum dolor sit amet" },
@@ -75,27 +76,28 @@ export default function Home() {
             alt="gardient 2 img"
             className="w-full h-[483px] rounded-lg"
           />
-          <div className="absolute flex flex-col py-[56px]">
-            <h1 className="text-white px-12 text-center text-[32px] font-medium leading-10">
-              Monitor your
+          <div className="absolute inset-0 flex flex-col items-center justify-center py-[56px]  z-10">
+            <h1
+              className="text-white px-12 lg:pt-[89px] lg:px-[324px] text-center text-[32px] 
+            lg:text-[56px] font-medium leading-10 lg:leading-[64px]"
+            >
+              Monitor your website like a pro
             </h1>
-            <h1 className="text-white px-8 text-center text-[32px] font-medium leading-10">
-              website like a pro
-            </h1>
-            <p className="pt-[24px] text-[#fff] px-8 text-center text-[16px] font-[400px] leading-6">
+
+            <p className="pt-[24px] lg:pt-12 text-[#fff] px-8 lg:px-[324px] text-center text-[16px] lg:text-[18px] font-[400px] leading-6 lg:leading-7">
               Join over 800+ happy site owners boosting productivity and
               efficiency!
             </p>
-            <div className="pt-[40px] flex flex-col gap-y-8 w-full justify-center items-center">
+            <div className="pt-[40px] lg:pt-[56px] lg:px-[460px] flex flex-col lg:flex-row lg:py-[56px] lg:gap-x-4 gap-y-8 w-full justify-center items-center">
               <button className="px-8 py-4 bg-white text-center">
                 <span className="text-[#EB2891] text-center text-[18px] font-medium leading-6">
                   Try for free
                 </span>
               </button>
               <div className="flex gap-x-3">
-                <button className="">
+                <button>
                   <span className="text-white text-[18px] font-medium leading-6">
-                    Conact Slaes
+                    Contact Sales
                   </span>
                 </button>
                 <Image src={rightArr} alt="arrow png" />
@@ -103,6 +105,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="px-[20px] lg:container lg:px-2 lg:mx-auto">
+        <Footer />
       </div>
     </>
   );
